@@ -1,0 +1,9 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "core/database/queries/employees.sql"
+    schema: "core/database/migrations/000001_management.up.sql"
+    gen:
+      go:
+        package: "db"
+        out: "platform/app/db"

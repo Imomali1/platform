@@ -1,2 +1,2 @@
 # platform
-University platform for students
+Company platform for employees and managers
