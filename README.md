@@ -1,3 +1,3 @@
 # platform
-Company platform for employees and managers
+That platform is for students!
 
