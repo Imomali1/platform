@@ -1,7 +1,4 @@
-migrate:
-	migrate create -ext sql -dir migrations -seq management
-
-sqlc:
-	sqlc generate
-
-.PHONY: migrate sqlc
+gen_proto:
+	protoc --go_out=. --go_opt=paths=source_relative \
+        --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+        platform/student/*.proto
