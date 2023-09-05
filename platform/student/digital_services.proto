@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/Imomali1/platform/platform/student";
+
+service DigitalServicesService {
+  rpc SomeFunc (Request2) returns (Response2) {}
+}
+
+message Request2 {
+  string request = 1;
+}
+
+message Response2 {
+  string reply = 1;
+}

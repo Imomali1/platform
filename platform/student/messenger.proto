@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "github.com/Imomali1/platform/platform/student";
+
+service MessengerService {
+  rpc SomeFunc (Request3) returns (Response3) {}
+}
+
+message Request3 {
+  string request = 1;
+}
+
+message Response3 {
+  string reply = 1;
+}
